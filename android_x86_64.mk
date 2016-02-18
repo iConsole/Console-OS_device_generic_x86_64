@@ -19,6 +19,10 @@ $(call inherit-product,$(SRC_TARGET_DIR)/product/core_64_bit.mk)
 # includes the base of Android-x86 platform
 $(call inherit-product,device/generic/common/x86.mk)
 
+# Open Gapps (disabled)
+#$(call inherit-product, vendor/google/build/opengapps-packages.mk)
+#GAPPS_VARIANT := pico
+
 # Overrides
 PRODUCT_NAME := android_x86_64
 PRODUCT_BRAND := Android-x86
